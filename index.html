@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Minha Landing Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Bem-vindo à minha Landing Page!</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#Vídeo/Aúdio">Vídeo/Aúdio</a></li>
+                <li><a href="#curriculo">Currículo</a></li>
+                <li><a href="#github">GitHub</a></li>
+                <li><a href="#servicos">Serviços</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h2>Sobre Mim</h2>
+        <p>Olá, meu nome é Heitor Pimenta da Silva, tenho 18 anos e sou estudante de Ciência da Computação. Minha jornada educacional começou no Centro Educacional São Geraldo, onde estudei do grupo 4 até o 7º ano. Depois, fui para o Centro de Ensino Charles Darwin, onde vivi experiências inesquecíveis durante o 8º e 9º anos. Concluí o ensino médio voltando ao São Geraldo. Além disso, Tenho um sólido conhecimento em inglês. Comecei meus estudos na Wizard e, posteriormente, no CNA, onde concluí o curso e conquistei o certificado B2 de Cambridge, após um simulado que me preparou para a prova oficial.</p>
+        <p>Meus hobbies incluem jogar futebol quase todos os dias, viajar, sair com os amigos e aproveitar a vida ao máximo!</p>
+        <img src="./Imagens/minhaimagem.jpeg" alt="Minha Foto" width="400px">
+    </section>
+
+    <section id="Vídeo/Aúdio">
+        <h2>Exemplo de Vídeo e Aúdio</h2>
+
+    <section id="video">
+        <h2>Vídeo</h2>
+        <a href="https://youtu.be/Tcq4f4ATNu0?si=Zlvqt3GRUKU2n4dD" target="_blank">Assista ao vídeo</a>
+    </section>
+            
+        
+        <section id="audio">
+            <h2>Aúdio</h2>
+            <audio controls>
+                <source src="meuaúdio.mp3" type="audio/mpeg">
+                Seu navegador não suporta o elemento de aúdio. 
+            </audio>
+        </section>
+    </section>
+
+    <section id="curriculo">
+        <h2>Currículo</h2>
+        <p>Aqui está meu currículo. Clique no botão abaixo para baixar:</p>
+        <a href="meucurrículo.pdf" download>
+            <button>Baixar Currículo</button>
+        </a>
+    </section>
+        
+    <section id="github">
+        <h2>Meu GitHub</h2>
+        <a href="https://github.com/heitorrz9" target="_blank">
+            <img src="./Imagens/github.png" alt="GitHub" style="width: 100px;">
+        </a>
+    </section>
+
+    <section id="servicos">
+        <h2>Serviços</h2>
+        <table>
+            <tr>
+                <th>Tipo de Site</th>
+                <th>Preço</th>
+            </tr>
+            <tr>
+                <td>Site Estático (1-2 Páginas)</td>
+                <td>R$300,00</td>
+            </tr>
+            <tr>
+                <td>Site Estático (3-5 Páginas)</td>
+                <td>R$500,00</td>
+            </tr>
+            <tr>
+                <td>Site Avançado (5+ Páginas)</td>
+                <td>R$800,00</td>
+            </tr>
+        </table>
+    </section>
+
+    <section id="contato">
+        <h2>Contato</h2>
+        <form>
+            <label for="nome">Nome Completo:</label>
+            <input type="text" id="nome" name="nome"><br>
+            <br>
+            <hr>
+            <br>
+            <label for="telefone">Telefone:</label>
+            <input type="tel" id="telefone" name="telefone"><br>
+            <br>
+            <hr>
+            <br>
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email"><br>
+            <br>
+            <hr>
+            <br>
+            <label for="tipo">Você é:</label>
+            <select id="tipo" name="tipo">
+                <option value="fisica">Pessoa Física</option>
+                <option value="juridica">Pessoa Jurídica</option>
+            </select><br>
+            <br>
+            <hr>
+            <br>
+            <label for="horario">Melhor Horário de Contato:</label>
+            <input type="text" id="horario" name="horario"><br>
+            <br>
+            <hr>
+            <br>
+            <label for="servico">Serviço que Deseja:</label><br>
+            <input type="checkbox" id="site-estatico" name="site-estatico">
+            <label for="site-estatico">Site Estático</label><br>
+            <input type="checkbox" id="site-avancado" name="site-avancado">
+            <label for="site-avancado">Site Avançado</label><br>
+            <br>
+            <hr>
+            <br>
+            <label for="descricao">Descrição:</label><br>
+            <textarea id="descricao" name="descricao"></textarea><br>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Heitor Pimenta da Silva. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
